@@ -1,18 +1,14 @@
 // Import stylesheets
 import './style.css';
 
-// Write Javascript code!
-// const appDiv = document.getElementById('app');
-// appDiv.innerHTML = `<h1>É nois que voa bruxao</h1>;
-
-//Functional
+//Funcional
 function getNumber(inputID) {
   const value = document.getElementById(inputID).value;
   return parseInt(value);
 }
 function getFunctionalFactorial(n) {
   console.log(n);
-  if (n < 0) return 'Por favor não use um numero negativo';
+  if (n < 0) return 'Por favor não use um numero negativo'; //chora typescript
   if (n <= 1) return 1;
   else return n * getFunctionalFactorial(n - 1);
 }
