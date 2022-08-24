@@ -10,7 +10,8 @@ function getNumber(inputID) {
 }
 function getFunctionalFactorial(n) {
   console.log(n);
-  if (n == 1) return 1;
+  if (n < 0) return 'Por favor não use um numero negativo';
+  if (n <= 1) return 1;
   else return n * getFunctionalFactorial(n - 1);
 }
 function displaySum(value) {
