@@ -11,7 +11,7 @@ function getNumber(inputID) {
 function getFunctionalFactorial(n) {
   console.log(n);
   if (n == 1) return 1;
-  else return (n = getFunctionalFactorial(n - 1));
+  else return n * getFunctionalFactorial(n - 1);
 }
 function displaySum(value) {
   document.getElementById('func-sum-result').textContent = value;
