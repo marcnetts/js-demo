@@ -4,6 +4,8 @@ import './style.css';
 // Write Javascript code!
 // const appDiv = document.getElementById('app');
 // appDiv.innerHTML = `<h1>É nois que voa bruxao</h1>;
+
+//Functional
 function getNumber(inputID) {
   const value = document.getElementById(inputID).value;
   return parseInt(value);
@@ -20,4 +22,15 @@ function displaySum(value) {
 document.getElementById('func-btn').onclick = function handler() {
   const res = getFunctionalFactorial(getNumber('input-n'));
   displaySum(res);
+};
+
+//Procedural
+document.getElementById('oo-btn').onclick = function handle() {
+  const value = document.getElementById('input-n').value;
+  let n = parseInt(value);
+  let res = 1;
+  for (let i = 1; i <= n; i++) {
+    res = res * i;
+  }
+  document.getElementById('oo-sum-result').textContent = res;
 };
